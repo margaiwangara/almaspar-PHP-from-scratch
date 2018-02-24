@@ -1,0 +1,119 @@
+/***Style the sidebar navigations**/
+#sidebar-nav
+{
+    position: absolute;
+    width: 250px;
+    min-height: 100%;
+    overflow-y: hidden;
+    z-index: 1;
+    transition: all .50s ease;
+}
+/**main content display**/
+#main-content-wrapper
+{
+    position: absolute;
+    width: 100%;
+    padding: 15px;
+    transition: all .50s ease;
+    padding-left: 250px;
+}
+
+/**toggled displayed styling**/
+#admin-wrapper.toggledDisplay #sidebar-nav
+{
+    width: 0px;
+
+}
+#admin-wrapper.toggledDisplay #main-content-wrapper
+{
+    padding-left: 0px;
+
+}
+
+/**top navigation bar styling**/
+.navbar-right
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.navbar-header .fa-bars
+{
+    margin: 13px 0px 15px 15px;
+}
+.navbar-header a
+{
+    text-decoration: none;
+    color: darkgray;
+}
+.navbar-header a:hover
+{
+    color: lightgrey;
+}
+
+/*sidebar navigation styling**/
+/* Sidebar Styles */
+
+/**index styles - dashboard**/
+*{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    background: url("/../almas-parlour/images/bg.png") no-repeat;
+    background-size: cover;
+
+}
+#sidebar-nav li a
+{
+    text-decoration: none;
+    color: grey;
+
+}
+#sidebar-nav li a:hover
+{
+    background: lightgrey;
+}
+.content-wrapper
+{
+    margin-left: 0;
+}
+
+/**products page display**/
+.add-display
+{
+    padding: 20px;
+}
+
+/**carousels images**/
+.carousel {
+    margin-bottom: 0;
+    padding: 0 40px 30px 40px;
+}
+/* The controlsy */
+.carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: -10px;
+    margin-right: -19px;
+}
+/* The colour of the indicators */
+.carousel-indicators li {
+    background: #cecece;
+}
+.carousel-indicators .active {
+    background: #428bca;
+}
+
+/**display image**/
+.edit-display
+{
+    overflow: hidden;
+}
+.thumbnails img
+{
+    height:100px;
+    width:100px;
+    padding: 5px;
+    border: solid #ccc 2px;'
+}

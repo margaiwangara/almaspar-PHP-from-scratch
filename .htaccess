@@ -1,0 +1,58 @@
+#Turn Rewrite engine on
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+
+RewriteRule ^(.+)$ $1.php [L,QSA]
+
+#NC makes the rule non-case sensitive
+#L makes the last rule that this specific condition will match
+
+#Rewrite for products dresses
+RewriteRule ^products/dresses view/item-dresses.php [NC,L]
+
+#Rewrite for products cosmetics
+RewriteRule ^products/cosmetics view/item-cosmetics.php [NC,L]
+
+#Rewrite for products jumpsuits
+RewriteRule ^products/jumpsuits view/item-nightgowns.php [NC,L]
+
+#Rewrite for products nightgowns
+RewriteRule ^products/nightgowns view/item-jumpsuits.php [NC,L]
+
+#rewrite for about us
+RewriteRule ^founders/about-us view/about-us.php [NC,L]
+
+#rewrite for contacts
+RewriteRule ^users/contact-us view/contact-us.php [NC,L]
+
+#rewrite for account creation
+RewriteRule ^users/registration view/account-creation.php [NC,L]
+
+#rewrite for checkout
+RewriteRule ^products/checkout view/checkout.php [NC,L]
+
+#rewrite for delete account
+RewriteRule ^users/account-deletion view/delete-account.php [NC,L]
+
+#rewrite in cart page
+RewriteRule ^products/cart view/in-cart.php [NC,L]
+
+#rewrite pass recovery email
+RewriteRule ^users/recovery-email view/recover.php [NC,L]
+
+#rewrite terms and conditions
+RewriteRule ^site/terms-and-conditions view/terms-and-conditions.php [NC,L]
+
+#rewrite favourites
+RewriteRule ^users/favourites view/user-info.php [NC,L]
+
+#rewrite favourites
+RewriteRule ^users/account-details view/user-info-view.php [NC,L]
+
+#rewrite display item
+RewriteRule ^display/(/^[a-z0-9]{32}+-[1-9][0-9]{0,10}$/)/(^[a-zA-Z0-9.\s-]+) view/display-item.php?ic=$1&n=$2 [NC/L]
+
+

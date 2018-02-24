@@ -1,0 +1,45 @@
+.login-brand
+{
+    font-size: 35px;
+    font-family: Cambria;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.login-brand a
+{
+    text-decoration: none;
+    color: brown;
+}
+.login-brand a:hover
+{
+    color: darkolivegreen;
+    /*
+    -webkit-transition: font-size .5s;
+    -moz-transition: font-size .5s;
+    -ms-transition: font-size .5s;
+    -o-transition: font-size .5s;
+    transition: font-size .5s;
+    */
+}
+
+.login-brand img
+{
+    height: 50px;
+    width: 50px;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background: url("/../almas-parlour/images/bg.png") no-repeat;
+    background-size: cover;
+
+}
+.login-body
+{
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-top: 100px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Title</title>
+    <style>
+        .snackbar-class
+        {
+            display: none;
+            min-width: 250px;
+            margin-left: -125px;
+            background: #004085;
+            color: white;
+            text-align: center;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            border-radius: 8px;
+            padding: 16px;
+            position: fixed;
+            z-index: 1;
+            left: 50%;
+            bottom: 30px;
+        }
+    </style>
+    <script>
+        $(document).ready(function()
+        {
+            $(".show-snackbar").on('click',function()
+            {
+                $(".snackbar-class").fadeIn(1000).fadeOut(10000);
+            })
+
+            $('#somebutton').on('click',function(e)
+            {
+                $(this).toggleClass("btn-success").toggleClass("btn-primary");
+            });
+        })
+    </script>
+</head>
+<body>
+
+<div class="snackbar-class">
+    This is a snackbar
+</div>
+<div class="button">
+    <button type="button" class="show-snackbar">
+        Click Me!
+    </button>
+</div>
+<div class="row">
+    <div class="col-md-2">
+        <button class="btn btn-primary" type="button" id="somebutton">
+            <span class="glyphicon glyphicon-search"></span> Button
+        </button>
+    </div>
+</div>
+
+
+
+</body>
+</html>

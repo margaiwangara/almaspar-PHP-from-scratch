@@ -1,0 +1,9 @@
+.item-dresses table td
+{
+    border-bottom: inset;
+}
+.link_scroll td
+{
+    border-right:inset grey 2px;
+    text-align: center;
+}

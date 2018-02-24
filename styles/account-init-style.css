@@ -1,0 +1,28 @@
+.account-init-panel
+{
+    margin-top: 20%;
+}
+.account-init-logo
+{
+    font-family: Cambria;
+    font-size: 30px;
+    font-weight: bolder;
+    z-index:1;
+}
+.account-init-logo-image
+{
+    position: absolute;
+    left: 43%;
+    margin-top: -8px;
+}
+
+.error-display
+{
+    font-family: Calibri;
+    font-weight: bold;
+
+}
+.error-display-create
+{
+    display: none;
+}
